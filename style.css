@@ -21,9 +21,18 @@
 .calculator .button {
   width: 100px;
   margin-bottom: 10px;
+  background-color: #4CAF50; /* Light green */
+  color: white;
+  font-weight: bold;
 }
 
 .calculator .result {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
+}
+@media (lang: he) {
+  .calculator .operation option {
+    text-align: right;
+    lang: he;
+  }
 }
