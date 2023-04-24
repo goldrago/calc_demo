@@ -4,10 +4,6 @@ var secondNumber = document.getElementById("secondNumber");
 
 // Create the drop-down list
 var operation = document.getElementById("operation");
-operation.options[0].text = "Addition";
-operation.options[1].text = "Subtraction";
-operation.options[2].text = "Multiplication";
-operation.options[3].text = "Division";
 
 // Create the button
 var calculateButton = document.getElementById("calculateButton");
@@ -22,6 +18,18 @@ calculateButton.addEventListener("click", function() {
   // Get the operation that was selected
   var operationValue = operation.options[operation.selectedIndex].textContent;
 
+  // Validate the first number
+  if (firstNumberValue < 0 || firstNumberValue > 100) {
+    firstNumberError.textContent = "Please enter a number between 0 and 100";
+    return;
+  }
+
+  // Validate the second number
+  if (secondNumberValue < 0 || secondNumberValue > 100) {
+    secondNumberError.textContent = "Please enter a number between 0 and 100";
+    return;
+  }
+
   // Do the calculation
   var result;
   switch (operationValue) {
@@ -33,13 +41,3 @@ calculateButton.addEventListener("click", function() {
       break;
     case "Multiplication":
       result = firstNumberValue * secondNumberValue;
-      break;
-    case "Division":
-      result = firstNumberValue / secondNumberValue;
-      break;
-  }
-
-  // Display the result
-  var resultTextBox = document.getElementById("result");
-  resultTextBox.textContent = result;
-});
