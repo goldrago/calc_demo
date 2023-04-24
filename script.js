@@ -20,26 +20,26 @@ calculateButton.addEventListener("click", function() {
   var secondNumberValue = parseInt(secondNumber.value);
 
   // Get the operation that was selected
-  var operationValue = operation.options[operation.selectedIndex].textContent; // Use textContent instead of text to support Hebrew characters
+  var operationValue = operation.options[operation.selectedIndex].textContent;
 
   // Do the calculation
   var result;
   switch (operationValue) {
-    case "Addition":
+    case "חי addition":
       result = firstNumberValue + secondNumberValue;
       break;
-    case "Subtraction":
+    case "חיסור subtraction":
       result = firstNumberValue - secondNumberValue;
       break;
-    case "Multiplication":
+    case "כפל multiplication":
       result = firstNumberValue * secondNumberValue;
       break;
-    case "Division":
+    case "חלוקה division":
       result = firstNumberValue / secondNumberValue;
       break;
   }
 
   // Display the result
   var resultTextBox = document.getElementById("result");
-  resultTextBox.textContent = result; // Use textContent instead of innerHTML to support Hebrew characters
+  resultTextBox.textContent = result;
 });
