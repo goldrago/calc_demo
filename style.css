@@ -1,0 +1,28 @@
+/* Calculator */
+
+.calculator {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.calculator .input {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.calculator .operation {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.calculator .button {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.calculator .result {
+  font-size: 20px;
+  font-weight: bold;
+}
