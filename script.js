@@ -25,16 +25,16 @@ calculateButton.addEventListener("click", function() {
   // Do the calculation
   var result;
   switch (operationValue) {
-    case "חי addition":
+    case "Addition":
       result = firstNumberValue + secondNumberValue;
       break;
-    case "חיסור subtraction":
+    case "Subtraction":
       result = firstNumberValue - secondNumberValue;
       break;
-    case "כפל multiplication":
+    case "Multiplication":
       result = firstNumberValue * secondNumberValue;
       break;
-    case "חלוקה division":
+    case "Division":
       result = firstNumberValue / secondNumberValue;
       break;
   }
