@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 10px;
   border: 1px solid #ccc;
+  direction: rtl; /* Set the direction of the text to "rtl" for Hebrew devices. */
 }
 
 .calculator .input {
