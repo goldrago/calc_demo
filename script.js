@@ -20,7 +20,7 @@ calculateButton.addEventListener("click", function() {
   var secondNumberValue = parseInt(secondNumber.value);
 
   // Get the operation that was selected
-  var operationValue = operation.options[operation.selectedIndex].text;
+  var operationValue = operation.options[operation.selectedIndex].textContent; // Use textContent instead of text to support Hebrew characters
 
   // Do the calculation
   var result;
@@ -41,5 +41,5 @@ calculateButton.addEventListener("click", function() {
 
   // Display the result
   var resultTextBox = document.getElementById("result");
-  resultTextBox.innerHTML = result;
+  resultTextBox.textContent = result; // Use textContent instead of innerHTML to support Hebrew characters
 });
