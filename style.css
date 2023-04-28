@@ -1,36 +1,24 @@
-.calculator {
-  width: 300px;
-  margin: 0 auto;
-  padding: 10px;
-  border: 1px solid #ccc;
-  direction: rtl; /* Set the direction of the text to "rtl" for Hebrew devices. */
+label {
+	display: inline-block;
+	width: 150px;
 }
-
-.calculator .input {
-  width: 50px;
-  margin-bottom: 10px;
+input[type="number"] {
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	margin-bottom: 10px;
 }
-
-.calculator .operation {
-  width: 100px;
-  margin-bottom: 10px;
+select {
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	margin-bottom: 10px;
 }
-
-.calculator .button {
-  width: 100px;
-  margin-bottom: 10px;
-  background-color: #4CAF50; /* Light green */
-  color: white;
-  font-weight: bold;
-}
-
-.calculator .result {
-  font-size: 30px;
-  font-weight: bold;
-}
-@media (lang: he) {
-  .calculator .operation option {
-    text-align: right;
-    lang: he;
-  }
+button {
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #2196f3;
+	color: #fff;
+	cursor: pointer;
 }
