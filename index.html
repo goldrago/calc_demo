@@ -1,34 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Calculator Demo</title>
-  <link rel="stylesheet" href="style.css">
+	<title>Calculator Demo</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="calculator">
-    <div class="input">
-      <input type="text" id="firstNumber" placeholder="First Number" maxlength="3" min="0" max="100" oninput="validateFirstNumber()">
-      <span class="error-message" id="firstNumberError"></span>
-    </div>
-    <div class="operation">
-      <select id="operation">
-        <option value="Addition">חי addition</option>
-        <option value="Subtraction">חיסור subtraction</option>
-        <option value="Multiplication">כפל multiplication</option>
-        <option value="Division">חלוקה division</option>
-      </select>
-    </div>
-    <div class="input">
-      <input type="text" id="secondNumber" placeholder="Second Number" maxlength="3" min="0" max="100" oninput="validateSecondNumber()">
-      <span class="error-message" id="secondNumberError"></span>
-    </div>
-    <div class="button">
-      <button id="calculateButton">חישוב</button>
-    </div>
-    <div class="result">
-      <h1 id="result"></h1>
-    </div>
-  </div>
-  <script src="script.js"></script>
+	<h2>Calculator Demo</h2>
+	<label>First Number:</label>
+	<input type="number" id="num1"><br><br>
+	<label>Select Operation:</label>
+	<select id="operation">
+		<option value="addition">Addition</option>
+		<option value="subtraction">Subtraction</option>
+		<option value="multiplication">Multiplication</option>
+		<option value="division">Division</option>
+	</select><br><br>
+	<label>Second Number:</label>
+	<input type="number" id="num2"><br><br>
+	<button id="calculate-btn">Calculate</button><br><br>
+	<label>Result:</label>
+	<input type="number" id="result"><br><br>
+	
+	<script src="script.js"></script>
 </body>
 </html>
